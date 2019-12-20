@@ -12,7 +12,7 @@ class SecurityController extends AbstractController
      * @Route("/login", name="app_login")
      */
     public function login(AuthenticationUtils $authenticationUtils)
-{
+    {
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
         // last username entered by the user
@@ -23,4 +23,13 @@ class SecurityController extends AbstractController
             'error' => $error,
         ]);
     }
+
+    /**
+     * @Route("/logout", name="app_logout")
+     */
+    public function logout()
+    {
+        throw new \Exception('will be intercepted before getting here');
+    }
+
 }

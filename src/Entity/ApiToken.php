@@ -18,7 +18,7 @@ class ApiToken
 
     /**
      * @ORM\Column(type="string", length=255)
-     */
+     */ 
     private $token;
 
     /**

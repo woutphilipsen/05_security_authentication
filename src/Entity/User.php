@@ -36,7 +36,7 @@ class User implements UserInterface
      * @Groups("main")
      */
     private $firstName;
-
+ 
     /**
      * @ORM\Column(type="string", length=255)
      */
